@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 600px;
+    width: 95%;
+    animation: fadeIn 0.8s forwards ease-in-out;
+}
+
+/* Headings */
+h1, h3 {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Inputs */
+input {
+    width: 85%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+/* Buttons */
+.btn {
+    background-color: #FFD700;
+    color: #1e3c72;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffa500;
+}
+
+.back-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    margin-top: 15px;
+}
+
+.back-btn:hover {
+    background-color: #45a049;
+}
+
+/* Weak Subjects List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resource-links a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+/* Colored Links */
+.youtube-link {
+    color: #FF0000; /* YouTube Red */
+}
+
+.chatgpt-link {
+    color: #00A67E; /* ChatGPT Green */
+}
+
+.google-link {
+    color: #4285F4; /* Google Blue */
+}
+
+.youtube-link:hover, 
+.chatgpt-link:hover, 
+.google-link:hover {
+    text-decoration: underline;
+}
+
+/* Faculty Contacts */
+.faculty-contacts {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.faculty-contacts h3 {
+    color: #FFD700;
+}
+
+.contacts-list li {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Fade-in Effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeIn 0.8s forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hide elements with the hidden class */
+.hidden {
+    display: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .container {
+    max-width: 98vw;
+    padding: 18px;
+  }
+  h1, h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 99vw;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  input, .btn {
+    font-size: 15px;
+    padding: 10px 8px;
+    border-radius: 8px;
+  }
+  ul li, .contacts-list li {
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 7px;
+  }
+  .faculty-contacts {
+    padding: 8px;
+    border-radius: 7px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 4px;
+    border-radius: 5px;
+  }
+  h1, h3 {
+    font-size: 0.95rem;
+  }
+  input, .btn {
+    font-size: 13px;
+    padding: 7px 4px;
+    border-radius: 5px;
+  }
+  ul li, .contacts-list li {
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+}

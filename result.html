@@ -1,0 +1,71 @@
+<!-- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Tracker</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="container result-container">
+        <h1 class="fade-in">Academic Progress Report</h1>
+        <div id="result" class="fade-in"></div>
+
+        <div id="questionContainer"></div>
+
+        <div id="weakSubjectSection" style="display: none;">
+            <h3 class="fade-in">Identify Weak Subjects</h3>
+            <input type="text" id="weakSubjectInput" class="fade-in" placeholder="Enter subject name">
+            <button id="addWeakSubject" class="btn fade-in">Add Subject</button>
+            
+            <h3 class="fade-in">Weak Subjects List</h3>
+            <ul id="weakSubjectsList" class="fade-in"></ul>
+        </div>
+
+        <div id="facultyContacts" class="faculty-contacts">
+            <h3>📚 Faculty Assistance</h3>
+            <ul class="contacts-list"></ul>
+        </div>
+
+        <button id="goBack" class="btn fade-in">Return to Assessment</button>
+    </div>
+
+    <script src="result.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assessment Tracker</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="container fade-in">
+        <h1>📊 Student Assessment Results</h1>
+        <div id="result"></div>
+
+        <!-- Weak Subjects Section -->
+        <div id="questionContainer"></div>
+        <div id="weakSubjectSection" class="hidden">
+            <h3>Weak Subjects</h3>
+            <input type="text" id="weakSubjectInput" placeholder="Enter Weak Subject">
+            <button id="addWeakSubject" class="btn">➕ Add Subject</button>
+            <ul id="weakSubjectsList"></ul>
+        </div>
+
+        <!-- Faculty Assistance Section -->
+        <div id="facultyContacts" class="faculty-contacts hidden"></div>
+
+        <!-- Back to Assessment Button -->
+        <button id="backToAssessment" class="btn back-btn">⬅️ Back to Assessment</button>
+    </div>
+
+    <script src="result.js"></script>
+</body>
+</html>

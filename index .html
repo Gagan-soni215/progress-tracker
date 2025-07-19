@@ -1,0 +1,77 @@
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assessment Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+
+.logo {
+    display: block;
+    margin: 20px auto; 
+    width: auto; 
+    max-width: 40vw; 
+    height: 5vh; 
+}
+
+.container {
+    margin-top: 25px;
+}
+
+    </style>
+</head>
+<body>
+
+   
+    <img src="https://gecraipur.ac.in/image/logo.png" alt="College Logo" class="logo">
+
+    <div class="container">
+        <h1>Student Assessment Tracker</h1>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="name">Student Name</label>
+                <input type="text" id="name" placeholder="Enter student's name" required>
+            </div>
+            <div class="form-group">
+                <label for="grades">Grades in previous session (%)</label>
+                <input type="number" id="grades" placeholder="Enter grades" required>
+            </div>
+            <div class="form-group">
+                <label for="homeworkCompleted">Homework Completed as per week (%)</label>
+                <input type="number" id="homeworkCompleted" placeholder="Enter homework completion" required>
+            </div>
+            <div class="form-group">
+                <label for="timeSpent">Time Spent (hours/week)</label>
+                <input type="number" id="timeSpent" placeholder="Enter time spent" required>
+            </div>
+            <div class="form-group">
+                <label for="participation">Participation (if no. of classes is 10 in a week)</label>
+                <input type="number" id="participation" placeholder="Enter participation" required>
+            </div>
+            <button type="submit" class="btn" id="submitAssessment">Submit Assessment</button>
+        </form>
+    </div>
+
+    <div id="result" class="result-container" style="display: none;">
+        <div id="weakSubjectsSection" style="display: none;">
+            <h3 class="fade-in">Enter Weak Subjects:</h3>
+            <input type="text" id="weakSubjectInput" class="fade-in" placeholder="Enter weak subject">
+            <button id="addWeakSubject" class="btn fade-in">Add Subject</button>
+
+            <h3 class="fade-in">Weak Subjects:</h3>
+            <ul id="weakSubjectsList" class="fade-in"></ul>
+        </div>
+    </div>
+
+    <div id="feedback" class="result-container" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
